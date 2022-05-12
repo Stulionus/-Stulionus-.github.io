@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--Huyen. This page is to support the drop down function on the main page-->
         <meta charset="utf-8" >
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <title>Star rating</title>
@@ -27,19 +28,20 @@
             }
             .star:hover{
                 cursor: pointer;
-
             }
         </style>
     </head>
     <body>
         <div class="star-rating">
             <p>How was your experience with our gallery?</p>
+             <!--5 buttons created for 5 stars-->
             <button class="star">&#9734;</button>
             <button class="star">&#9734;</button>
             <button class="star">&#9734;</button>
             <button class="star">&#9734;</button>
             <button class="star">&#9734;</button>
         </div>
+        <!--The JS coding starts here. This is to change the color of all the stars to the left of the current click (inner stars) -->
         <script>
             const allStars = document.querySelectorAll('.star');
 
