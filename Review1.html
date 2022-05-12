@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" >
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Star rating</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .star_rating{
+                user-select: none;
+            }
+            .star{
+                font-size: 3rem;
+                color: #ff9800;
+                background-color: unset;
+                border: none;
+            }
+            .star:hover{
+                cursor: pointer;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="star-rating">
+            <p>How was your experience with our gallery?</p>
+            <button class="star">&#9734;</button>
+            <button class="star">&#9734;</button>
+            <button class="star">&#9734;</button>
+            <button class="star">&#9734;</button>
+            <button class="star">&#9734;</button>
+        </div>
+        <script>
+            const allStars = document.querySelectorAll('.star');
+
+            allStars.forEach((star, i) =>{
+                star.onclick = function(){
+                    let current_star_level = i+1;
+                    allStars.forEach((star,j)=>{
+                        if (current_star_level >= j+1){
+                            star.innerHTML = '&#9733';
+                        } else{
+                            star.innerHTML = '&#9734';
+                        }
+                        })
+                }
+            })
+        </script>
+    </body>
+    </html>
