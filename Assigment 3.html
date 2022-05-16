@@ -1,202 +1,233 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <!--This is the link to bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!--Including Bootstrap 4 to inherit some default styles-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <title> HTML Practice Group 4</title>
-    <!--here is the externally linked stylesheet-->
-    <link rel="icon" type="image/png" href="https://i.pinimg.com/564x/ef/63/10/ef6310e3372e689e72863c199d7699fa.jpg">
-     <!--here is the embedded stylesheet with various style changes-->
-    <style type="text/css">
-        body {
-                background: rgb(10, 7, 14);
-                background-image: url("https://img.freepik.com/free-photo/textured-canvas-surface_1194-7556.jpg?w=360");
-                background-attachment: fixed;
-                background-repeat:repeat;
-                font-family: Helvetica, Arial, Helvetica, sans-serif;
-                color: #524d44;
-                font-weight: 750;
-        }
-        .boxes {
-                background-color: rgb(236, 236, 236);
-                padding: 20px;
-                margin: 20px;
-                border: 3px solid black;
-                border-radius: 15px;
-                margin-left: auto;
-                margin-right: auto;
-                width: 80%;
-                max-width: 900px;
-                overflow: auto;
-                box-shadow: 5px 5px 5px;
-            }
-            h1 {
-            color: black;
-            font-family: Georgia, serif;
-            font-weight: 900;
-            font-style: italic;
-            text-align: left;
-            font-weight: 900;
-        }
-        /*Noura: this is to put the images in a grid and add an effect when you hover over it*/
-        .img-container{
-            float: left;
-            width: 33%;
-            padding: 5px;
-            opacity: 0.5;
-            filter: alpha (opacity=50);
-        }
-        /*Noura: using selector :hover to change visibility of the image*/
-        .img-container:hover{
-            opacity: 1.0;
-            filter: alpha(opacity=100);
-        }
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-        /* Noura:hidden text that shows up when you hover over the text with your mouse*/
-        div.showhidden p.defaulthidden {
-            visibility: hidden;
-        }
-        div.showhidden:hover p.defaulthidden {
-            visibility: visible;
-        }
-        /*Max: a specific tag like <a> say, you want all <a> tags to be styled in a particular way */
-        a {
-            font-weight: bold;
-            text-transform: uppercase;
-            text-decoration: underline;
-        }
-        /*Max: or specific unique elements that need to be styled a certain way through using the id="" attribute and #id in the stylesheet.*/
-        #first{
-            font-family: 'Courier New', Courier, monospace;;
-            color: black;
-            font-weight: bold;
-            font-size: 1.3em;
-        }
-        /*Max: trying to add boxes here*/
-        .boxes{
-            background-color: #e2deca;
-            padding: 30px;
-            margin: auto;
-            margin-top: 40px;
-            margin-bottom: 40px;
-            border: 5px solid rgb(147, 148, 104);
-        }
-        /*Max:Characteristics for cantainer. This has to be placed before setting the grid or it will not work.*/
-        .container{
-        width: 200%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 1000px;
-        background: rgb(240, 212, 180);
-        margin-bottom: 15px;
-        padding-bottom: 20px;
-        border-radius: 20px;
-        border:3px solid #857c6e ;
-        }
-        /*Max: Characteristics for colums. I am still not sure what flex-basis and flex-grow does.*/
-        .col{
-            flex-basis: 0;
-            flex-grow: 1;
-            max-width: 50%;
-            position: relative;
-            width:50%;
-            padding-right: 15px;
-            padding-left: 15px;
-        }
-        /*Max:Characteristics for rows. Clomuns must be placed in rows.*/
-        .row{
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            border-radius: 10px;
-            padding: 5px;
-            justify-content: center;
-        } 
-        /*Max:Characteristics flexboxes to work properly*/
-        .media{
-            align-items: flex-start;
-            display: flex;
-        }
-        .media-body{
-            flex: 1;
-            padding-left: 20px;
-            align-self: center;
-        }
-        /* Changing the default of the hover drop down selection to pink*/
-        .navbar .dropdown-item:hover {
-                background-color:pink;
-                text-decoration: underline black;
-        }
-    </style>
-</head>
+  <!--This is the link to bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!--Including Bootstrap 4 to inherit some default styles-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <title> HTML Practice Group 4</title>
+  <!--here is the externally linked stylesheet-->
+  <link rel="icon" type="image/png" href="https://i.pinimg.com/564x/ef/63/10/ef6310e3372e689e72863c199d7699fa.jpg">
+  <!--here is the embedded stylesheet with various style changes-->
+  <style type="text/css">
+    body {
+      background: rgb(10, 7, 14);
+      background-image: url("https://img.freepik.com/free-photo/textured-canvas-surface_1194-7556.jpg?w=360");
+      background-attachment: fixed;
+      background-repeat: repeat;
+      font-family: Helvetica, Arial, Helvetica, sans-serif;
+      color: #524d44;
+      font-weight: 750;
+    }
+
+    .boxes {
+      background-color: rgb(236, 236, 236);
+      padding: 20px;
+      margin: 20px;
+      border: 3px solid black;
+      border-radius: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      max-width: 900px;
+      overflow: auto;
+      box-shadow: 5px 5px 5px;
+    }
+
+    h1 {
+      color: black;
+      font-family: Georgia, serif;
+      font-weight: 900;
+      font-style: italic;
+      text-align: left;
+      font-weight: 900;
+    }
+
+    /*Noura: this is to put the images in a grid and add an effect when you hover over it*/
+    .img-container {
+      float: left;
+      width: 33%;
+      padding: 5px;
+      opacity: 0.5;
+      filter: alpha (opacity=50);
+    }
+
+    /*Noura: using selector :hover to change visibility of the image*/
+    .img-container:hover {
+      opacity: 1.0;
+      filter: alpha(opacity=100);
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    /* Noura:hidden text that shows up when you hover over the text with your mouse*/
+    div.showhidden p.defaulthidden {
+      visibility: hidden;
+    }
+
+    div.showhidden:hover p.defaulthidden {
+      visibility: visible;
+    }
+
+    /*Max: a specific tag like <a> say, you want all <a> tags to be styled in a particular way */
+    a {
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+
+    /*Max: or specific unique elements that need to be styled a certain way through using the id="" attribute and #id in the stylesheet.*/
+    #first {
+      font-family: 'Courier New', Courier, monospace;
+      ;
+      color: black;
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+
+    /*Max: trying to add boxes here*/
+    .boxes {
+      background-color: #e2deca;
+      padding: 30px;
+      margin: auto;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      border: 5px solid rgb(147, 148, 104);
+    }
+
+    /*Max:Characteristics for cantainer. This has to be placed before setting the grid or it will not work.*/
+    .container {
+      width: 200%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 1000px;
+      background: rgb(240, 212, 180);
+      margin-bottom: 15px;
+      padding-bottom: 20px;
+      border-radius: 20px;
+      border: 3px solid #857c6e;
+    }
+
+    /*Max: Characteristics for colums. I am still not sure what flex-basis and flex-grow does.*/
+    .col {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 50%;
+      position: relative;
+      width: 50%;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    /*Max:Characteristics for rows. Clomuns must be placed in rows.*/
+    .row {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 10px;
+      padding: 5px;
+      justify-content: center;
+    }
+
+    /*Max:Characteristics flexboxes to work properly*/
+    .media {
+      align-items: flex-start;
+      display: flex;
+    }
+
+    .media-body {
+      flex: 1;
+      padding-left: 20px;
+      align-self: center;
+    }
+
+    /* Changing the default of the hover drop down selection to pink*/
+    .navbar .dropdown-item:hover {
+      background-color: pink;
+      text-decoration: underline black;
+    }
+  </style>
+</head><!--Mark's comment 5/15: All html elements that are displayed on the page should be within the body tag so move lines 167-209 to after line 211.-->
 <!--This is the Navigation bar up top. This was worked on by Drake-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="Assigment 3.html"><img src="https://cdn.shopify.com/s/files/1/0077/0270/8279/products/black_b1b1f48f-244c-4b81-ab8b-0391e678a2a0_2048x.jpg?v=1564276363" alt="" width="30" height="24" class="d-inline-block align-text-top"> UWB</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="Assigment 3.html">Home <span class="sr-only">+</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Assigment 3 Noura Page.html">Noura</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Assigment 3 Drake Page.html">Drake</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="Assigment 3 Max Page.html">Max</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Assigment 3 Helenie Page.html">Helenie</a>
-          </li>
-          <!--Huyen. This is the Drop down menu to either view email addresses of the artists, or rate the gallery-->
-    <li class="nav-item dropdown">
-      <a class="nav-link active dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Interact</a>
-           <div class="dropdown-menu">
-           <a class="dropdown-item" href="Review1.html">Rate Us</a>
-           <a class="dropdown-item" href="Contacts.html">Contact Us</a>
+  <a class="navbar-brand" href="Assigment 3.html"><img
+      src="https://cdn.shopify.com/s/files/1/0077/0270/8279/products/black_b1b1f48f-244c-4b81-ab8b-0391e678a2a0_2048x.jpg?v=1564276363"
+      alt="" width="30" height="24" class="d-inline-block align-text-top"> UWB</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="Assigment 3.html">Home <span class="sr-only">+</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Assigment 3 Noura Page.html">Noura</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Assigment 3 Drake Page.html">Drake</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Assigment 3 Max Page.html">Max</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Assigment 3 Helenie Page.html">Helenie</a>
+      </li>
+      <!--Huyen. This is the Drop down menu to either view email addresses of the artists, or rate the gallery-->
+      <li class="nav-item dropdown">
+        <a class="nav-link active dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Interact</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="Review1.html">Rate Us</a>
+          <a class="dropdown-item" href="Contacts.html">Contact Us</a>
         </div>
       </li>
-      </ul>
-      <!--This is the search bar-->
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
+    </ul>
+    <!--This is the search bar-->
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
 <body>
-    <p align="center">
-        <img src="https://competition.adesignaward.com/designs/675344010f5d1de10401b1f789db9d867aec749d-thumb-big.jpg"></p>
+  <p align="center"><!--Mark's comment 5/15: Try not to use the align attribute in a tag as it's been deprecated for like 20 years now... For images, use a style that has the image use a block display and then add auto margins. https://www.w3schools.com/howto/howto_css_image_center.asp (For text, it's easier since you just use the text-align property.)-->
+    <img src="https://competition.adesignaward.com/designs/675344010f5d1de10401b1f789db9d867aec749d-thumb-big.jpg">
+  </p>
 
-        <div class="container" style="margin-top:70px">
-          <!-- Create first row for heading to be separate from image and text. -md-auto scales the width of the column to the width of the content-->
-           <div class="row">
-               <div class="col-md-auto">
-                <h1> UWB Totally Real Art Gallery </h1>
-             </div>
-               </div>
+  <div class="container" style="margin-top:70px">
+    <!-- Create first row for heading to be separate from image and text. -md-auto scales the width of the column to the width of the content-->
+    <div class="row">
+      <div class="col-md-auto">
+        <h1> UWB Totally Real Art Gallery </h1>
+      </div>
+    </div>
 
 
 
-    <p>One thing we noticed about the members of group 4, is that we are all great artists. However we weren't able to showcase our amazing art until now
-        <br> This website is a place where we can finally show the world our amazing art skills.
+    <p>One thing we noticed about the members of group 4, is that we are all great artists. However we weren't able to
+      showcase our amazing art until now
+      <br> This website is a place where we can finally show the world our amazing art skills.
     </p>
-    
+
 
     <h2>The Art of <em> Stealing </em></h2>
 
@@ -206,34 +237,39 @@
 
     <div>Then came the famous quote by Steve Jobs: <q>Good artists copy, great artists steal.</q></div>
 
-   <h4><strong><q>Good Artists Copy, Great Artists Steal!</q> ~ Group 4, 2022</strong></h4>
+    <h4><strong><q>Good Artists Copy, Great Artists Steal!</q> ~ Group 4, 2022</strong></h4>
 
     <hr>
 
-    <h3><b><span style="color:rgb(80, 43, 159)">Click on the names in the navbar to look at the artists' paintings!</span></b></h3> <!--Noura: I changed this sentence from "Some of our most beautiful work" to this sentence since it matches the new layout more and will direct readers to look at the our individual pages. I also changed the color of it to make it pop out more-->
+    <h3><b><span style="color:rgb(80, 43, 159)">Click on the names in the navbar to look at the artists'
+          paintings!</span></b></h3>
+    <!--Noura: I changed this sentence from "Some of our most beautiful work" to this sentence since it matches the new layout more and will direct readers to look at the our individual pages. I also changed the color of it to make it pop out more-->
 
-<!--Noura: I removed the code here that showed our art work since Drake has already put them in our individual pages. I thought it would be repetative if we have them in our home page as well as in our individual pages-->
+    <!--Noura: I removed the code here that showed our art work since Drake has already put them in our individual pages. I thought it would be repetative if we have them in our home page as well as in our individual pages-->
 
-<br>
-<br>
-<!--Noura: I also added these checkboxes becuase I thought they are a nice feature-->
-<h5>Once you've checked out an artist's page make sure to check the box below corresponding to their name to make sure you don't miss any.</h5>
+    <br>
+    <br>
+    <!--Noura: I also added these checkboxes becuase I thought they are a nice feature-->
+    <h5>Once you've checked out an artist's page make sure to check the box below corresponding to their name to make
+      sure you don't miss any.</h5>
 
-<div class="custom-control custom-checkbox">
-    <input type="checkbox" class="custom-control-input" id="customCheck1">
-    <label class="custom-control-label" for="customCheck1">Noura</label>
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheck1">
+      <label class="custom-control-label" for="customCheck1">Noura</label>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheck2">
+      <label class="custom-control-label" for="customCheck1">Drake</label>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheck3">
+      <label class="custom-control-label" for="customCheck1">Max</label>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheck4">
+      <label class="custom-control-label" for="customCheck1">Helenie</label>
+    </div>
   </div>
-  <div class="custom-control custom-checkbox">
-    <input type="checkbox" class="custom-control-input" id="customCheck2">
-    <label class="custom-control-label" for="customCheck1">Drake</label>
-  </div><div class="custom-control custom-checkbox">
-    <input type="checkbox" class="custom-control-input" id="customCheck3">
-    <label class="custom-control-label" for="customCheck1">Max</label>
-  </div><div class="custom-control custom-checkbox">
-    <input type="checkbox" class="custom-control-input" id="customCheck4">
-    <label class="custom-control-label" for="customCheck1">Helenie</label>
-  </div>
-        </div>
 </body>
 
 </html>
