@@ -1,0 +1,62 @@
+html {
+  height: 100%;
+}
+.description{
+   color: solid rgb(179, 151, 39);
+ }
+body{
+    background-color: #000;
+    font-family: "Open Sans","Helvetica Neue",Arial, Helvetica, sans-serif;
+    color: solid rgb(179, 151, 39);
+    height: 100%;
+ }
+ .navbar{
+     border-bottom: solid rgb(179, 151, 39);
+     padding: 10px;
+     color: white;
+     background-attachment: scroll;
+     position:sticky;
+ }
+ .image1{
+   background-position: center center;
+   background-image: url(https://f1.lpcdn.site/4cc05b35c2f937c5bd9e7d41d3686fff/53d2c338d59efb5facd696213ada1410.jpg);
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+   box-sizing: border-box;
+   height: 70%;
+   vertical-align: center;
+ }
+ .cn-dark{
+   background-color: #000 !important;
+   color: white;
+ }
+ .row{
+   align-content: center;
+   margin-left: auto;
+   margin-right:auto;
+ }
+ .col{
+   align-content: center;
+ }
+ .logo{
+   align-self: center;
+   padding-top: 340px;
+   background-color:rgba(0, 0, 0, 0.8);
+   background-size: auto;
+   background-attachment: fixed;
+   padding-bottom: 250px;
+   align-content: center;
+   
+ }
+ .container{
+   color: solid rgb(179, 151, 39);
+ }
+ .description{
+   align-content: center;
+   justify-content: center;
+ }
+ .space1{
+   padding-top: 300px;
+ }
+ 
