@@ -32,7 +32,6 @@ body{
    color: white;
  }
  .row{
-   border: solid green;
    align-content: center;
  }
  .wbackground{
@@ -44,6 +43,15 @@ body{
    background-position: center;
    box-sizing: border-box;
    padding: 0 0 0 0;
+ }
+ .background2{
+  background-image: url(mona_wall.png);
+  height: 70%;
+  background-size:cover ;
+  box-sizing: border-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
  }
  .logo{
    align-self: center;
@@ -61,8 +69,8 @@ body{
    border: solid rgb(179, 151, 39);
    background-color: #000;
    border-radius: 10px;
-   padding: 20px;
    font-family: "Open Sans","Helvetica Neue",Arial, Helvetica, sans-serif;
+   padding: 20px 20px 20px 20px;
  }
  .space1{
    padding-top: 300px;
@@ -74,15 +82,44 @@ body{
    background-size: cover;
    margin: auto;
    background-repeat: repeat;
-   background-attachment: fixed;
+   background-attachment:fixed;
    background-position: center;
    box-sizing: border-box;
    padding-right: 0;
    padding-left: 0;
  }
+ .logo12{
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 180px;
+  align-content: center;
+  background-size: cover;
+  margin: auto;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  box-sizing: border-box;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 260px;
+ }
  .faq1{
    font-size: large;
    font-family: "Open Sans","Helvetica Neue",Arial, Helvetica, sans-serif;
+   color: rgb(179, 151, 39);
+   font-size: x-large;
  }
+ .spacer1{
+   padding-top: 140px;
+ }
+ #header1{
+  font-size: x-large;
+  font-family: Intro;
+ }
+ hr{
+   height: 2px !important;
+   color:rgb(179, 151, 39);
+   opacity: 1;
+ }
+
 
  
