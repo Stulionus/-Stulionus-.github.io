@@ -18,7 +18,7 @@ body{
      position:sticky;
  }
  .image1{
-   background-position: center center;
+   background-position: center;
    background-image: url(https://f1.lpcdn.site/4cc05b35c2f937c5bd9e7d41d3686fff/53d2c338d59efb5facd696213ada1410.jpg);
    background-attachment: fixed;
    background-repeat: no-repeat;
@@ -32,31 +32,53 @@ body{
    color: white;
  }
  .row{
+   border: solid green;
    align-content: center;
-   margin-left: auto;
-   margin-right:auto;
  }
- .col{
-   align-content: center;
+ .wbackground{
+   background-image: url(https://f1.lpcdn.site/4cc05b35c2f937c5bd9e7d41d3686fff/53d2c338d59efb5facd696213ada1410.jpg);
+   background-size:cover ;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   height: 70%;
+   background-position: center;
+   box-sizing: border-box;
  }
  .logo{
    align-self: center;
-   padding-top: 340px;
+   padding-top: 150px;
    background-color:rgba(0, 0, 0, 0.8);
-   background-size: auto;
+   background-size: cover;
    background-attachment: fixed;
    padding-bottom: 250px;
    align-content: center;
    
  }
- .container{
-   color: solid rgb(179, 151, 39);
- }
  .description{
    align-content: center;
    justify-content: center;
+   border: solid rgb(179, 151, 39);
+   background-color: #000;
+   border-radius: 10px;
+   padding: 20px;
+   font-family: "Open Sans","Helvetica Neue",Arial, Helvetica, sans-serif;
  }
  .space1{
    padding-top: 300px;
+ }
+ .logo11{
+   background-color: rgba(0, 0, 0, 0.8);
+   padding-top: 180px;
+   align-content: center;
+   background-size: cover;
+   margin: auto;
+   background-repeat: repeat;
+   background-attachment: fixed;
+   background-position: center;
+   box-sizing: border-box;
+ }
+ .faq1{
+   font-size: large;
+   font-family: "Open Sans","Helvetica Neue",Arial, Helvetica, sans-serif;
  }
  
