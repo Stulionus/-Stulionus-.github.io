@@ -169,6 +169,26 @@ justify-content: center;
 .btn{
   width: 10%;
 }
+.answer{
+ border: solid rgb(179, 151, 39); 
+ border-radius: 20px;
+ padding: 20px 20px 20px 20px;
+ width: 90%;
+}
+.question{
+  font-family: Intro;
+  padding: auto;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-top: 40px;
+  font-size: larger;
+}
+.contact{
+ border-top: solid rgb(179, 151, 39);
+ padding-top: 50px;
+ text-align: center;
+ padding-bottom: 40px;
+}
  /* 
  display:flex;
  flex-direction: center;
