@@ -1,97 +1,108 @@
 html {
   height: 100%;
 }
-.description{
-   color: solid rgb(179, 151, 39);
- }
-body{
-    background-color: #000;
-    font-family: "Open Sans","Helvetica Neue",Arial, Helvetica, sans-serif;
-    color:rgb(179, 151, 39);
-    height: 100%;
- }
- .navbar{
-     border-bottom: solid rgb(179, 151, 39);
-     padding: 10px;
-     color: white;
-     background-attachment: scroll;
-     position:sticky;
- }
- .image1{
-   background-position: center;
-   background-image: url(https://f1.lpcdn.site/4cc05b35c2f937c5bd9e7d41d3686fff/53d2c338d59efb5facd696213ada1410.jpg);
-   background-attachment: fixed;
-   background-repeat: no-repeat;
-   background-size: cover;
-   box-sizing: border-box;
-   height: 70%;
-   vertical-align: center;
- }
- .cn-dark{
-   background-color: #000 !important;
-   color: white;
- }
- .row{
-   align-content: center;
-   color:rgb(179, 151, 39);
 
- }
- .wbackground{
-   background-image: url(https://f1.lpcdn.site/4cc05b35c2f937c5bd9e7d41d3686fff/53d2c338d59efb5facd696213ada1410.jpg);
-   background-size:cover ;
-   background-attachment: fixed;
-   background-repeat: no-repeat;
-   height: 70%;
-   background-position: center;
-   box-sizing: border-box;
-   padding: 0 0 0 0;
- }
- .background2{
-  background-image: url(mona_wall.png);
-  background-size:cover ;
+.description {
+  color: solid rgb(179, 151, 39);
+}
+
+body {
+  background-color: #000;
+  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: rgb(179, 151, 39);
+  height: 100%;
+}
+
+.navbar {
+  border-bottom: solid rgb(179, 151, 39);
+  padding: 10px;
+  color: white;
+  background-attachment: scroll;
+  position: sticky;
+}
+
+.image1 {
+  background-position: center;
+  background-image: url(https://f1.lpcdn.site/4cc05b35c2f937c5bd9e7d41d3686fff/53d2c338d59efb5facd696213ada1410.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 70%;
+  vertical-align: center;
+}
+
+.cn-dark {
+  background-color: #000 !important;
+  color: rgb(179, 151, 39);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(179, 151, 39);
+}
+
+.wbackground {
+  background-image: url(https://f1.lpcdn.site/4cc05b35c2f937c5bd9e7d41d3686fff/53d2c338d59efb5facd696213ada1410.jpg);
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 70%;
   background-position: center;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   padding: 0 0 0 0;
- }
- .logo{
-   align-self: center;
-   padding-top: 150px;
-   background-color:rgba(0, 0, 0, 0.8);
-   background-size: cover;
-   background-attachment: fixed;
-   padding-bottom: 250px;
-   align-content: center;
-   
- }
- .description{
-   align-content: center;
-   justify-content: center;
-   border: solid rgb(179, 151, 39);
-   background-color: #000;
-   border-radius: 20px;
-   font-family: "Open Sans","Helvetica Neue",Arial, Helvetica, sans-serif;
-   padding: 20px 20px 20px 20px;
- }
- .space1{
-   padding-top: 300px;
- }
- .logo11{
-   background-color: rgba(0, 0, 0, 0.8);
-   padding-top: 170px;
-   align-content: center;
-   background-size: cover;
-   margin: auto;
-   background-repeat: repeat;
-   background-attachment:fixed;
-   background-position: center;
-   box-sizing: border-box;
-   padding-right: 0;
-   padding-left: 0;
- }
- .logo12{
+}
+
+.background2 {
+  background-image: url(mona_wall.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 70%;
+  background-position: center;
+  box-sizing: border-box;
+  padding: 0 0 0 0;
+}
+
+.logo {
+  align-self: center;
+  padding-top: 150px;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 250px;
+  align-content: center;
+
+}
+
+.description {
+  align-content: center;
+  justify-content: center;
+  border: solid rgb(179, 151, 39);
+  background-color: #000;
+  border-radius: 20px;
+  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  padding: 20px 20px 20px 20px;
+}
+
+.space1 {
+  padding-top: 300px;
+}
+
+.logo11 {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 170px;
+  align-content: center;
+  background-size: cover;
+  margin: auto;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  box-sizing: border-box;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.logo12 {
   background-color: rgba(0, 0, 0, 0.8);
   padding-top: 180px;
   align-content: center;
@@ -104,31 +115,37 @@ body{
   padding-right: 0;
   padding-left: 0;
   padding-bottom: 260px;
- }
- .faq1{
-   font-size: large;
-   font-family: "Open Sans","Helvetica Neue",Arial, Helvetica, sans-serif;
-   color: rgb(179, 151, 39);
-   font-size: x-large;
- }
- .spacer1{
-   padding-top: 140px;
- }
- #header1{
+}
+
+.faq1 {
+  font-size: large;
+  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: rgb(179, 151, 39);
+  font-size: x-large;
+}
+
+.spacer1 {
+  padding-top: 140px;
+}
+
+#header1 {
   font-size: x-large;
   font-family: Intro;
- }
- hr{
-   height: 2px !important;
-   color:rgb(179, 151, 39);
-   opacity: 1;
- }
- .header2{
+}
+
+hr {
+  height: 2px !important;
+  color: rgb(179, 151, 39);
+  opacity: 1;
+}
+
+.header2 {
   font-size: 40px;
   font-family: Intro;
   color: rgb(179, 151, 39);
- }
-.tile{
+}
+
+.tile {
   position: relative;
   text-align: center;
   align-content: center;
@@ -140,14 +157,15 @@ body{
   padding-right: 0;
   display: block;
 }
-.image_overlay{
-  position:absolute;
+
+.image_overlay {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
-  display:flex;
+  display: flex;
   flex-direction: center;
   align-items: center;
   justify-content: center;
@@ -157,25 +175,31 @@ body{
   transition: opacity 0.25s;
   backdrop-filter: blur(5px);
 }
-.image_overlay:hover{
+
+.image_overlay:hover {
   opacity: 1;
 }
-.image_overlay_blur{
-  backdrop-filter:blur(5px);
+
+.image_overlay_blur {
+  backdrop-filter: blur(5px);
 }
-.forbutton{
-justify-content: center;
+
+.forbutton {
+  justify-content: center;
 }
-.btn{
+
+.btn {
   width: 10%;
 }
-.answer{
- border: solid rgb(179, 151, 39); 
- border-radius: 20px;
- padding: 20px 20px 20px 20px;
- width: 90%;
+
+.answer {
+  border: solid rgb(179, 151, 39);
+  border-radius: 20px;
+  padding: 20px 20px 20px 20px;
+  width: 90%;
 }
-.question{
+
+.question {
   font-family: Intro;
   padding: auto;
   padding-bottom: 20px;
@@ -183,13 +207,15 @@ justify-content: center;
   padding-top: 40px;
   font-size: larger;
 }
-.contact{
- border-top: solid rgb(179, 151, 39);
- padding-top: 50px;
- text-align: center;
- padding-bottom: 40px;
+
+.contact {
+  border-top: solid rgb(179, 151, 39);
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 40px;
 }
- /* 
+
+/* 
  display:flex;
  flex-direction: center;
  align-items: center;
