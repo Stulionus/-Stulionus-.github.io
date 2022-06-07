@@ -89,6 +89,30 @@ body {
   margin-left: 200px;
 }
 
+.room_description {
+  margin-right: 300px;
+  margin-left: 300px;
+  border-radius: 20px;
+  border: solid rgb(179, 151, 39);
+  padding: 30px;
+}
+
+.description2 {
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  background-color: #000;
+  border-radius: 20px;
+  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  padding: 60px 20px 20px 20px;
+}
+
+.quest_col{
+  width: fit-content;
+  vertical-align: middle;
+  display: inline;
+}
+
 .space1 {
   padding-top: 300px;
 }
@@ -259,6 +283,7 @@ hr {
   position: relative;
   scroll-snap-type: x mandatory;
   scroll-padding: 0 24px;
+  text-align: center;
 }
 
 .item {
