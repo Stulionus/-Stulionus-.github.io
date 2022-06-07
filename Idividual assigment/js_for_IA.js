@@ -26,3 +26,12 @@ document.querySelectorAll(".carousel").forEach(carousel => {
     items[0].classList.add("item_selected");
     buttons[0].classList.add("car_button_active");
 }); 
+
+var counter = 1;
+setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4){
+        counter = 1;
+    }
+}, 5000);

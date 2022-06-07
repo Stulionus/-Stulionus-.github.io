@@ -94,7 +94,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  height: 70%;
+  height:110%;
   background-position: center;
   box-sizing: border-box;
   padding: 100px 0 0 0;
@@ -102,13 +102,15 @@ body {
 }
 
 .room_description {
-  margin-right: 300px;
-  margin-left: 300px;
+  margin-right: 350px;
+  margin-left: 350px;
   border-radius: 20px;
   border: solid rgb(179, 151, 39);
   padding: 30px;
   background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  font-size: 1.3em;
+
 }
 
 .description2 {
@@ -124,6 +126,22 @@ body {
   width: fit-content;
   vertical-align: middle;
   display: inline;
+}
+
+.header3{
+  font-size: 1.3em;
+  font-family: Intro;
+  color: rgb(179, 151, 39);
+  text-decoration: none;
+  cursor: default;
+}
+
+.header3:hover{
+  font-size: 1.3em;
+  font-family: Intro;
+  color: rgb(179, 151, 39);
+  text-decoration: none;
+  cursor: default;
 }
 
 .space1 {
@@ -292,48 +310,108 @@ hr {
   text-decoration: none;
 }
 
-.carousel {
-  position: relative;
-  scroll-snap-type: x mandatory;
-  scroll-padding: 0 24px;
-  text-align: center;
-}
+/*Styling for caruosel*/
+ .slider {
+   margin-top: 80px;
+   width: 400px;
+   height: 500px;
+   border-radius: 10px;
+   overflow: hidden;
+ }
+ .slides {
+   width: 500%;
+   height: 500px;
+   display: flex;
+   
+ }
 
-.item {
-  scroll-snap-align: start;
-  height: 400px;
-  display: none;
-}
+ .slides input{
+   display: none;
+ }
 
-.item_selected{
-  display: block;
-}
+ .slide{
+   width: 20%;
+   transition: 2s;
+   
+ }
+ 
+ .slide img{
+   width: 400px;
+   height: 400px;
+   border-radius: 10px;
+ }
 
-.carousel_nav {
-  width: 100%;
-  padding: 20px 0;
+ .navigaion-manual{
   position: absolute;
-  bottom: 0;
-  left: 0;
-  text-align: center;
+  width: 400px;
+  margin-top: 370px;
+  display: flex;
+  justify-content: center;
+ }
+
+ .manual-btn {
+  border: solid 2px rgb(179, 151, 39);
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+ }
+
+ .manual-btn:not(:last-child){
+   margin-right: 40px;
+ }
+
+ .manual-btn:hover{
+   background: rgb(179, 151, 39);
+ }
+
+ #radio1:checked ~ .first {
+   margin-left: 0;
+ }
+
+ #radio2:checked ~ .first {
+  margin-left: -20%;
 }
 
-.car_button {
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
+#radio3:checked ~ .first {
+  margin-left: -40%;
 }
 
-.car_button_active {
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  margin: 0 5px;
-  border: solid rgb(179, 151, 39);
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 400px;
+  justify-content: center;
+  margin-top: 370px;
+  
+}
+
+.navigation-auto div{
+  border: 2px solid rgb(179, 151, 39);
+  padding: 5px;
+  border-radius: 10px;
+  justify-content: center;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: rgb(179, 151, 39);
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: rgb(179, 151, 39);
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: rgb(179, 151, 39);
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: rgb(179, 151, 39);
 }
