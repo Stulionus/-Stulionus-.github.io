@@ -5,7 +5,8 @@ html {
 .description {
   color: solid rgb(179, 151, 39);
 }
-
+/*Main page style sheet start -----------------------------------------------------------------------------------------------------*/
+/*Second page and navbar styleshee*/
 body {
   background-color: #000;
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -32,7 +33,7 @@ body {
   height: 70%;
   vertical-align: center;
 }
-
+/*Bootstrap's does want to chage this background so I use !important to force it to aply it.*/
 .cn-dark {
   background-color: #000 !important;
   color: rgb(179, 151, 39);
@@ -100,7 +101,7 @@ body {
   padding: 100px 0 0 0;
   border-top: solid 2px rgb(179, 151, 39);
 }
-
+/*Main page style sheet end -----------------------------------------------------------------------------------------------------------------------*/
 .room_description {
   margin-right: 350px;
   margin-left: 350px;
@@ -214,7 +215,7 @@ hr {
   color: rgb(179, 151, 39);
   text-align: center;
 }
-
+/*hover effect for tiles: Overlay part is just invisible until hovered*/
 .tile {
   position: relative;
   text-align: center;
@@ -244,6 +245,7 @@ hr {
   opacity: 0;
   transition: opacity 0.25s;
   backdrop-filter: blur(5px);
+  /*This backdrop-filter is not supported by some browsers, so it will look bad in Firefox and Safari*/
 }
 
 .image_overlay:hover {
@@ -297,7 +299,7 @@ hr {
   text-align: center;
   margin-top: 200px;
 }
-
+/*i do not like default Bootstrap's hover effect so I remove it here.*/
 .link {
   color: black;
   text-decoration: none;
