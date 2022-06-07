@@ -227,25 +227,75 @@ hr {
   text-align: center;
   padding-bottom: 40px;
 }
-.nav-item{
+
+.nav-item {
   display: inline;
   width: 200%;
   text-align: center;
   vertical-align: middle;
 }
-.quest_logo{
+
+.quest_logo {
   text-align: center;
   margin-top: 200px;
 }
-.link{
- color: black;
- text-decoration: none;
+
+.link {
+  color: black;
+  text-decoration: none;
 }
-.link2{
+
+.link2 {
   color: rgb(179, 151, 39);
   text-decoration: none;
 }
-.link2:hover{
+
+.link2:hover {
   color: rgb(179, 151, 39);
   text-decoration: none;
+}
+
+.carousel {
+  position: relative;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 24px;
+}
+
+.item {
+  scroll-snap-align: start;
+  height: 400px;
+  display: none;
+}
+
+.item_selected{
+  display: block;
+}
+
+.carousel_nav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.car_button {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.car_button_active {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  margin: 0 5px;
+  border: solid rgb(179, 151, 39);
 }
