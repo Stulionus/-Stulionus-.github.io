@@ -93,3 +93,8 @@ document.querySelector(".next").addEventListener("click", () => {
 });
 
 renderCalendar();
+
+function notification() {
+  alert("You have succsefuly book an advventure!");
+}
+  

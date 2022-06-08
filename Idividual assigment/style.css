@@ -92,6 +92,35 @@ body {
   margin-left: 200px;
 }
 
+.forcalendar{
+  margin: 0;
+}
+
+.col ul{
+  margin-top: 200px;
+}
+
+.col ul li{
+  margin: 10px;
+  padding: 5px 0;
+  text-align: center;
+  width: 150%;
+  border: solid 2px rgb(179, 151, 39);
+  list-style: none;
+
+}
+
+.col .active{
+  margin: 10px;
+  padding: 5px 0;
+  text-align: center;
+  width: 150%;
+  border: solid 2px rgb(179, 151, 39);
+  list-style: none;
+  background-color: rgb(179, 151, 39);
+  color: #000;
+
+}
 .quest_container {
   background-image: url(ex_machine_backrund.jpg);
   background-size: cover;
@@ -440,23 +469,13 @@ font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
 
 */
 
-.container {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  width: 100%;
-  height: 100%;
-  color: rgb(179, 151, 39);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .calendar {
   width: 45.1rem;
   height: 52rem;
   border: 2px solid rgb(179, 151, 39);
+  margin-left: 300px;
 }
 
 .month{
