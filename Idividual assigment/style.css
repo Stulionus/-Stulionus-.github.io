@@ -1,172 +1,97 @@
 html {
   height: 100%;
 }
+.description{
+   color: solid rgb(179, 151, 39);
+ }
+body{
+    background-color: #000;
+    font-family: "Open Sans","Helvetica Neue",Arial, Helvetica, sans-serif;
+    color:rgb(179, 151, 39);
+    height: 100%;
+ }
+ .navbar{
+     border-bottom: solid rgb(179, 151, 39);
+     padding: 10px;
+     color: white;
+     background-attachment: scroll;
+     position:sticky;
+ }
+ .image1{
+   background-position: center;
+   background-image: url(https://f1.lpcdn.site/4cc05b35c2f937c5bd9e7d41d3686fff/53d2c338d59efb5facd696213ada1410.jpg);
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+   box-sizing: border-box;
+   height: 70%;
+   vertical-align: center;
+ }
+ .cn-dark{
+   background-color: #000 !important;
+   color: white;
+ }
+ .row{
+   align-content: center;
+   color:rgb(179, 151, 39);
 
-.description {
-  color: solid rgb(179, 151, 39);
-}
-
-body {
-  background-color: #000;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  color: rgb(179, 151, 39);
-  height: 100%;
-}
-
-.navbar {
-  border-bottom: solid rgb(179, 151, 39);
-  padding: 10px;
-  color: white;
-  background-attachment: scroll;
-  position: fixed;
-  height: 7%;
-}
-
-.image1 {
-  background-position: center;
-  background-image: url(https://f1.lpcdn.site/4cc05b35c2f937c5bd9e7d41d3686fff/53d2c338d59efb5facd696213ada1410.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box;
-  height: 70%;
-  vertical-align: center;
-}
-
-.cn-dark {
-  background-color: #000 !important;
-  color: rgb(179, 151, 39);
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  color: rgb(179, 151, 39);
-  padding-right: 60px;
-}
-
-.wbackground {
-  background-image: url(for\ website-01.png);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  height: 70%;
-  background-position: center;
-  box-sizing: border-box;
-  padding: 0 0 0 0;
-}
-
-.background2 {
+ }
+ .wbackground{
+   background-image: url(https://f1.lpcdn.site/4cc05b35c2f937c5bd9e7d41d3686fff/53d2c338d59efb5facd696213ada1410.jpg);
+   background-size:cover ;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   height: 70%;
+   background-position: center;
+   box-sizing: border-box;
+   padding: 0 0 0 0;
+ }
+ .background2{
   background-image: url(mona_wall.png);
-  background-size: cover;
+  background-size:cover ;
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 70%;
   background-position: center;
-  box-sizing: border-box;
+  box-sizing: border-box; 
   padding: 0 0 0 0;
-}
-
-.logo {
-  align-self: center;
-  padding-top: 150px;
-  background-color: rgba(0, 0, 0, 0.8);
-  background-size: cover;
-  background-attachment: fixed;
-  padding-bottom: 250px;
-  align-content: center;
-
-}
-
-.description {
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-  border: solid rgb(179, 151, 39);
-  background-color: #000;
-  border-radius: 20px;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  padding: 20px 20px 20px 20px;
-  margin-right: 200px;
-  margin-left: 200px;
-}
-
-.quest_container{
-  background-image: url(ex_machine_backrund.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  height:110%;
-  background-position: center;
-  box-sizing: border-box;
-  padding: 100px 0 0 0;
-  border-top: solid 2px rgb(179, 151, 39);
-}
-
-.room_description {
-  margin-right: 350px;
-  margin-left: 350px;
-  border-radius: 20px;
-  border: solid rgb(179, 151, 39);
-  padding: 30px;
-  background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: saturate(180%) blur(20px);
-  font-size: 1.3em;
-
-}
-
-.description2 {
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-  border-radius: 20px;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  padding: 30px 20px 20px 20px;
-}
-
-.quest_col{
-  width: fit-content;
-  vertical-align: middle;
-  display: inline;
-}
-
-.header3{
-  font-size: 1.3em;
-  font-family: Intro;
-  color: rgb(179, 151, 39);
-  text-decoration: none;
-  cursor: default;
-}
-
-.header3:hover{
-  font-size: 1.3em;
-  font-family: Intro;
-  color: rgb(179, 151, 39);
-  text-decoration: none;
-  cursor: default;
-}
-
-.space1 {
-  padding-top: 300px;
-}
-
-.logo11 {
-  width: 90%;
-  /*
-  background-color: rgba(0, 0, 0, 0.8);
-  */
-  padding-top: 400px;
-  align-content: center;
-  background-size: cover;
-  margin: auto;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-position: center;
-  box-sizing: border-box;
-  padding-right: 0;
-  padding-left: 0;
-  padding-bottom: 500px;
-}
-
-.logo12 {
+ }
+ .logo{
+   align-self: center;
+   padding-top: 150px;
+   background-color:rgba(0, 0, 0, 0.8);
+   background-size: cover;
+   background-attachment: fixed;
+   padding-bottom: 250px;
+   align-content: center;
+   
+ }
+ .description{
+   align-content: center;
+   justify-content: center;
+   border: solid rgb(179, 151, 39);
+   background-color: #000;
+   border-radius: 20px;
+   font-family: "Open Sans","Helvetica Neue",Arial, Helvetica, sans-serif;
+   padding: 20px 20px 20px 20px;
+ }
+ .space1{
+   padding-top: 300px;
+ }
+ .logo11{
+   background-color: rgba(0, 0, 0, 0.8);
+   padding-top: 170px;
+   align-content: center;
+   background-size: cover;
+   margin: auto;
+   background-repeat: repeat;
+   background-attachment:fixed;
+   background-position: center;
+   box-sizing: border-box;
+   padding-right: 0;
+   padding-left: 0;
+ }
+ .logo12{
   background-color: rgba(0, 0, 0, 0.8);
   padding-top: 180px;
   align-content: center;
@@ -179,44 +104,35 @@ body {
   padding-right: 0;
   padding-left: 0;
   padding-bottom: 260px;
-}
-
-.faq1 {
-  font-size: 2.5em !important;
-  font-family: Intro;
-  color: rgb(179, 151, 39);
-  font-size: x-large;
-  text-align-last: center;
-  padding-bottom: 100px;
-}
-
-.spacer1 {
-  padding-top: 140px;
-}
-
-#header1 {
+ }
+ .faq1{
+   font-size: large;
+   font-family: "Open Sans","Helvetica Neue",Arial, Helvetica, sans-serif;
+   color: rgb(179, 151, 39);
+   font-size: x-large;
+ }
+ .spacer1{
+   padding-top: 140px;
+ }
+ #header1{
   font-size: x-large;
   font-family: Intro;
-}
-
-hr {
-  height: 2px !important;
-  color: rgb(179, 151, 39);
-  opacity: 1;
-}
-
-.header2 {
+ }
+ hr{
+   height: 2px !important;
+   color:rgb(179, 151, 39);
+   opacity: 1;
+ }
+ .header2{
   font-size: 40px;
   font-family: Intro;
   color: rgb(179, 151, 39);
-  text-align: center;
-}
-
-.tile {
+ }
+.tile{
   position: relative;
   text-align: center;
   align-content: center;
-  border: solid 2px rgb(179, 151, 39);
+  border: solid rgb(179, 151, 39);
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 60px;
@@ -224,15 +140,14 @@ hr {
   padding-right: 0;
   display: block;
 }
-
-.image_overlay {
-  position: absolute;
+.image_overlay{
+  position:absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
-  display: flex;
+  display:flex;
   flex-direction: center;
   align-items: center;
   justify-content: center;
@@ -242,32 +157,25 @@ hr {
   transition: opacity 0.25s;
   backdrop-filter: blur(5px);
 }
-
-.image_overlay:hover {
+.image_overlay:hover{
   opacity: 1;
 }
-
-.image_overlay_blur {
-  backdrop-filter: blur(5px);
+.image_overlay_blur{
+  backdrop-filter:blur(5px);
 }
-
-.forbutton {
-  justify-content: center;
+.forbutton{
+justify-content: center;
 }
-
-.btn {
+.btn{
   width: 10%;
-  color: black;
 }
-
-.answer {
-  border: solid rgb(179, 151, 39);
-  border-radius: 20px;
-  padding: 20px 20px 20px 20px;
-  width: 90%;
+.answer{
+ border: solid rgb(179, 151, 39); 
+ border-radius: 20px;
+ padding: 20px 20px 20px 20px;
+ width: 90%;
 }
-
-.question {
+.question{
   font-family: Intro;
   padding: auto;
   padding-bottom: 20px;
@@ -275,143 +183,20 @@ hr {
   padding-top: 40px;
   font-size: larger;
 }
-
-.contact {
-  border-top: solid rgb(179, 151, 39);
-  padding-top: 50px;
-  text-align: center;
-  padding-bottom: 40px;
+.contact{
+ border-top: solid rgb(179, 151, 39);
+ padding-top: 50px;
+ text-align: center;
+ padding-bottom: 40px;
 }
-
-.nav-item {
-  display: inline;
-  width: 200%;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.quest_logo {
-  text-align: center;
-  margin-top: 200px;
-}
-
-.link {
-  color: black;
-  text-decoration: none;
-}
-
-.link2 {
-  color: rgb(179, 151, 39);
-  text-decoration: none;
-}
-
-.link2:hover {
-  color: rgb(179, 151, 39);
-  text-decoration: none;
-}
-
-/*Styling for caruosel*/
- .slider {
-   margin-top: 80px;
-   width: 400px;
-   height: 500px;
-   border-radius: 10px;
-   overflow: hidden;
- }
- .slides {
-   width: 500%;
-   height: 500px;
-   display: flex;
-   
- }
-
- .slides input{
-   display: none;
- }
-
- .slide{
-   width: 20%;
-   transition: 2s;
-   
- }
- 
- .slide img{
-   width: 400px;
-   height: 400px;
-   border-radius: 10px;
- }
-
- .navigaion-manual{
-  position: absolute;
-  width: 400px;
-  margin-top: 370px;
+.questlogo{
+  width: 200px;
+  align-content: center;
   display: flex;
-  justify-content: center;
- }
-
- .manual-btn {
-  border: solid 2px rgb(179, 151, 39);
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
- }
-
- .manual-btn:not(:last-child){
-   margin-right: 40px;
- }
-
- .manual-btn:hover{
-   background: rgb(179, 151, 39);
- }
-
- #radio1:checked ~ .first {
-   margin-left: 0;
- }
-
- #radio2:checked ~ .first {
-  margin-left: -20%;
 }
-
-#radio3:checked ~ .first {
-  margin-left: -40%;
-}
-
-#radio4:checked ~ .first {
-  margin-left: -60%;
-}
-.navigation-auto{
-  position: absolute;
-  display: flex;
-  width: 400px;
-  justify-content: center;
-  margin-top: 370px;
-  
-}
-
-.navigation-auto div{
-  border: 2px solid rgb(179, 151, 39);
-  padding: 5px;
-  border-radius: 10px;
-  justify-content: center;
-  transition: 1s;
-}
-
-.navigation-auto div:not(:last-child){
-  margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background: rgb(179, 151, 39);
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background: rgb(179, 151, 39);
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background: rgb(179, 151, 39);
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4{
-  background: rgb(179, 151, 39);
-}
+ /* 
+ display:flex;
+ flex-direction: center;
+ align-items: center;
+ justify-content: center;
+ */
