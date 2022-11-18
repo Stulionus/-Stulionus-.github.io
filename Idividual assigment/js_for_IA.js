@@ -98,3 +98,55 @@ function notification() {
   alert("You have succsefuly book an advventure!");
 }
   
+
+var floatvar = "";
+
+var numArr = [
+  {
+    "number": 1,
+    "text": "10:00",
+    "active": false
+  },
+  {
+    "number": 2,
+    "text": "11:00",
+    "active": false
+  },
+  {
+    "number": 3,
+    "text": "12:00",
+    "active": false
+  },
+  {
+    "number": 4,
+    "text": "13:00",
+    "active": false
+  },
+  {
+    "number": 5,
+    "text": "14:00",
+    "active": false
+  },
+  {
+    "number": 6,
+    "text": "15:00",
+    "active": false
+  },
+  {
+    "number": 7,
+    "text": "16:00",
+    "active": false
+  },
+  {
+    "number": 9,
+    "text": "17:00",
+    "active": false
+  },
+  {
+    "number": 1,
+    "text": "18:00",
+    "active": false
+  },
+]
+
+document.getElementById("timetable").innerHTML(numArr.text);

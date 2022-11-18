@@ -2,7 +2,6 @@ package HW4;
 import java.io.*;
 import java.util.Scanner;
 
-import javax.sound.sampled.SourceDataLine;
 public class homework4 {
     public static void main(String[] args) {
         Scanner inputStream = null;
@@ -15,10 +14,12 @@ public class homework4 {
         int programScore; 
         int midtermScore;
         int finalScore;
+        int [] IDandScores = new int[3];
+        String lineRead;
         try 
         {
-            inputStream = new Scanner(new FileInputStream("/Users/maxim/Documents/CSS142/GitHub/Stulionus.github.io/HW4/courseData.txt"));
-            outputStream = new PrintWriter(new FileOutputStream("/Users/maxim/Documents/CSS142/GitHub/Stulionus.github.io/HW4/courseDataCalculated.txt"));
+            inputStream = new Scanner(new FileInputStream("courseData.txt"));
+            outputStream = new PrintWriter(new FileOutputStream("courseDataCalculated.txt"));
         }
         catch (FileNotFoundException e)
         {
@@ -34,7 +35,7 @@ public class homework4 {
         
         outputStream.println("Grade Data For Class " + courseID);
         outputStream.println("ID      Programs   Midterm Final   Weighted   Average   Overall   Grade");
-       
+        /* 
         // for (int i = 0; i < 3; ++i){
         while (inputStream.nextInt() != 0){
             studentID = inputStream.nextInt();
@@ -48,7 +49,9 @@ public class homework4 {
             outputStream.println(); 
             
             }
-            
+        */   
+        lineRead = inputStream.nextLine();
+        System.out.println(lineRead);
         }
 
         System.out.println("Succsefuly saved!");
