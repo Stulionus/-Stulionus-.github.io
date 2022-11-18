@@ -18,10 +18,9 @@ public class midterm_part2{
 
         StudentID = inputStream.nextInt();
         while(inputStream.hasNextDouble()){
-            while (inputStream.nextDouble() != 0){
                 scoreTotal = scoreTotal + inputStream.nextDouble();
                 ++ numOfScores;
-            }
+            
             outputStream.print(StudentID + " ");
             outputStream.print("got a " + (scoreTotal/numOfScores));
         }
