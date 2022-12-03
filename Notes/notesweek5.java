@@ -16,7 +16,7 @@ public class notesweek5
 
         PrintWriter OutputStreamName = null;
         
-        OutputStreaName = new PrintWriter(new FileOutputStream(File_name,true));
+        OutputStreamName = new PrintWriter(new FileOutputStream(File_name,true));
         
         if file does not exist it creates new, if it does it adds text  to the file 
         
