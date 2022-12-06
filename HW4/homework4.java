@@ -1,6 +1,6 @@
-package HW4;
 import java.io.*;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class homework4 {
     public static void main(String[] args) {
@@ -9,13 +9,8 @@ public class homework4 {
         double programWeight;
         double midtermWeight;
         double finalWeight;
-        int courseID;
-        int studentID; 
-        int programScore; 
-        int midtermScore;
-        int finalScore;
-        int [] IDandScores = new int[3];
-        String lineRead;
+        int [] IDandScores = new int[4];
+        boolean keepReading = true;
         try 
         {
             inputStream = new Scanner(new FileInputStream("courseData.txt"));
@@ -30,12 +25,28 @@ public class homework4 {
         midtermWeight = inputStream.nextDouble();
         finalWeight = inputStream.nextDouble();
         
-        for (int j = 0; j < 3; j++){
-        courseID = inputStream.nextInt();
-        
-        outputStream.println("Grade Data For Class " + courseID);
+        Pattern p = Pattern.compile("\\d+");
+        while (inputStream.hasNext(p)){
+            int courseID;
+            courseID = inputStream.nextInt();
+            a: while(inputStream.hasNext()){
+                int studentID = inputStream.nextInt();
+                if (studentID == 0 ) break a;
+                int programScore = inputStream.nextInt(); 
+                int midtermScore = inputStream.nextInt();
+                int finalScore = inputStream.nextInt(); 
+                System.out.println(studentID + " " + programScore  + " " + midtermScore + " " + finalScore);
+                // Calculation.....
+            }
+            outputStream.println("Grade Data For Class " + courseID);
+        }
         outputStream.println("ID      Programs   Midterm Final   Weighted   Average   Overall   Grade");
-        /* 
+        System.out.println("Succsefuly saved!");
+        inputStream.close();
+        outputStream.close();
+    }
+}
+/* 
         // for (int i = 0; i < 3; ++i){
         while (inputStream.nextInt() != 0){
             studentID = inputStream.nextInt();
@@ -49,13 +60,4 @@ public class homework4 {
             outputStream.println(); 
             
             }
-        */   
-        lineRead = inputStream.nextLine();
-        System.out.println(lineRead);
-        }
-
-        System.out.println("Succsefuly saved!");
-        inputStream.close();
-        outputStream.close();
-    }
-}
+        */  
