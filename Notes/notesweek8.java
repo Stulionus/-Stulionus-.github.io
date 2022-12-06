@@ -6,7 +6,7 @@ public class notesweek8
         Multi dimensional arrays --------------------------------
         To create a 2D array:
 
-        BaseType [][] variableName = new BaseType[numOfRows][numOfColumns];
+        BaseType [][] variableName = new BaseType[numOfColumns][numOfrRows];
 
         3D array is an array of 2d arrays (array of sheets)
         BaseType [][][] variableName = new BaseType[numOfSheet][numOfRows][numOfColumns];
