@@ -4,6 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 public class TicTacToeGame{
     private static char[] arrayOfCells = {'1','2','3','4','5','6','7','8','9'};
+    private static int[] arrayOfTakenIndeces = {0,0,0,0,0,0,0,0,0};
     private static char userChar = '0';
     private static char compChar = 'X';
 
@@ -39,6 +40,8 @@ public class TicTacToeGame{
                     playersMove();
                     makeAndPrintGrid();
                     computersMove();
+                    makeAndPrintGrid();
+                    playersMove();
                     makeAndPrintGrid();
                     break;
                 case 2:
@@ -121,19 +124,32 @@ public class TicTacToeGame{
         return isPlayerGoingFirst;
     }
 
-    public static void playersMove(){
+    public static void playersMove() {
         System.out.println("Chose what cell you want to place you character in.");
         Scanner keyboard = new Scanner(System.in);
-        int userChoice = keyboard.nextInt()-1;
-        arrayOfCells[userChoice] = userChar;
+        boolean keepAsking = true;
+        int userChoice = 0;
+        do {
+            userChoice = keyboard.nextInt() - 1;
+            if(arrayOfTakenIndeces[userChoice] == 0) {
+                arrayOfCells[userChoice] = userChar;
+                arrayOfTakenIndeces[userChoice] = 1;
+                keepAsking = false;
+            } else {
+                System.out.println("Please choose a cell that is not taken.");
+                userChoice = keyboard.nextInt() - 1;
+            }
+        }while (keepAsking);
+
     }
 
     public static void computersMove(){
         int min = 8;
         int max = 0;
-        int compChoice = ((int) (Math.random()*(max-min+1)+min))-1;
+        int compChoice = (int) (Math.random()*(max-min+1)+min);
         System.out.println("Computer choice is:" + compChoice);
-        arrayOfCells[compChoice] = compChar;
+        arrayOfCells[compChoice-1] = compChar;
+        arrayOfTakenIndeces[compChoice] = 1;
     }
 
 }
