@@ -53,7 +53,7 @@ public class notesweek5
         -----------To open and read a file use scanner:-------------------
         
         try {
-            Scanner scannerName = new Scanner(new FileInputStream("fileName.txt"))
+            Scanner scannerName = new Scanner(new FileInputStream("fileName.txt"));
         }
         catch (FileNotFoundExcpetion e){
             System.out.println(e); // prints out an exception

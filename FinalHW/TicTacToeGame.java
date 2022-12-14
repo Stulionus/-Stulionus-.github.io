@@ -3,8 +3,13 @@ import java.io.FileNotFoundException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 public class TicTacToeGame{
+    // Array of characters to show what character is in what place
     private static char[] arrayOfCells = {'1','2','3','4','5','6','7','8','9'};
+
+    // Array of place s that are taken to not allow user or computer to overwrite taken places
     private static int[] arrayOfTakenIndeces = {0,0,0,0,0,0,0,0,0};
+
+    // Defaults for user and computer characters
     private static char userChar = '0';
     private static char compChar = 'X';
 
@@ -36,13 +41,7 @@ public class TicTacToeGame{
                     char userChar = getUserCharacter();
                     System.out.println("Your character is: " + userChar);
                     System.out.println("You are going first " + checkFirstMove());
-                    makeAndPrintGrid();
-                    playersMove();
-                    makeAndPrintGrid();
-                    computersMove();
-                    makeAndPrintGrid();
-                    playersMove();
-                    makeAndPrintGrid();
+                    roundOfAGame();
                     break;
                 case 2:
                     System.out.println("Rules:");
@@ -58,7 +57,7 @@ public class TicTacToeGame{
 
     }
 
-    // Method to get character that player wants to play as.
+    // Method to get character that player wants to play as. Computer gets another character
     public static char getUserCharacter (){
         System.out.println("Welcome to TicTacToeGame");
         Scanner keyboard = new Scanner(System.in);
@@ -124,6 +123,26 @@ public class TicTacToeGame{
         return isPlayerGoingFirst;
     }
 
+    public static String roundOfAGame(){
+        boolean playerWon = false;
+        boolean computerWon = false;
+        String winner = null;
+        do {
+            makeAndPrintGrid();
+            playersMove();
+            computersMove();
+            playerWon = checkWinConditions(userChar);
+            computerWon = checkWinConditions(compChar);
+        } while (!playerWon || !computerWon);
+
+        if (playerWon){
+            winner = "Player";
+        }else{
+            winner = "Computer";
+        }
+        return winner;
+    }
+
     public static void playersMove() {
         System.out.println("Chose what cell you want to place you character in.");
         Scanner keyboard = new Scanner(System.in);
@@ -149,7 +168,27 @@ public class TicTacToeGame{
         int compChoice = (int) (Math.random()*(max-min+1)+min);
         System.out.println("Computer choice is:" + compChoice);
         arrayOfCells[compChoice-1] = compChar;
-        arrayOfTakenIndeces[compChoice] = 1;
+        arrayOfTakenIndeces[compChoice-1] = 1;
     }
 
+    public static boolean checkWinConditions(char checkedChar){
+        if (arrayOfCells[0] == checkedChar && arrayOfCells[1] == checkedChar && arrayOfCells[2] == checkedChar){
+            return true;
+        }else if (arrayOfCells[3] == checkedChar && arrayOfCells[4] == checkedChar && arrayOfCells[5] == checkedChar){
+            return true;
+        }else if (arrayOfCells[6] == checkedChar && arrayOfCells[7] == checkedChar && arrayOfCells[8] == checkedChar){
+            return true;
+        }else if (arrayOfCells[0] == checkedChar && arrayOfCells[3] == checkedChar && arrayOfCells[6] == checkedChar){
+            return true;
+        }else if (arrayOfCells[1] == checkedChar && arrayOfCells[4] == checkedChar && arrayOfCells[7] == checkedChar){
+            return true;
+        }else if (arrayOfCells[2] == checkedChar && arrayOfCells[5] == checkedChar && arrayOfCells[8] == checkedChar){
+            return true;
+        }else if (arrayOfCells[0] == checkedChar && arrayOfCells[4] == checkedChar && arrayOfCells[8] == checkedChar){
+            return true;
+        }else if (arrayOfCells[2] == checkedChar && arrayOfCells[4] == checkedChar && arrayOfCells[6] == checkedChar){
+            return true;
+        }
+        return false;
+    }
 }
